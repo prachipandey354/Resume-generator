@@ -36,13 +36,13 @@ function generateCV(){
   let wes=document.getElementsByClassName("weField");
   let str="";
   for(let e of wes){
-    str=str+'<li>${e.value} </li>';
+    str=str+`<li> ${e.value} </li>`;
   }
   document.getElementById("weT").innerHTML=str;
   let aqs=document.getElementsByClassName("eqField");
   let str1="";
   for(let e of aqs){
-    str1+='<li> ${e.value} </li>';
+    str1+=`<li> ${e.value} </li>`;
   }
   document.getElementById("aqT").innerHTML=str1;
   let file=document.getElementById("imgField").files[0];
